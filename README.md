@@ -25,9 +25,7 @@ Then our endpoint `/items/` is going to return a JSON with the next structure:
 [
     {
         "id": "some-id",
-        "image": "://url/to/image",
         "name": "whatever",
-        "url": "://url/to/more/information"
     },
     ...
 ]
