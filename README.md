@@ -1,6 +1,6 @@
 # Test Code
 
-Our objetive is create an api that join different sources of data.
+Our objetive is create an api that joins different sources of data.
 
 `Clash`: http://www.clashapi.xyz/api/cards/{id} // json
 - images: /images/cards/{id|idName}.png
@@ -12,9 +12,9 @@ Our objetive is create an api that join different sources of data.
 
 ## Exercise
 
-Create an endpoint called `items`. This endpoint group all the information 
-previously mentioned. We want to flatten the information displayed and to 
-complete that we are going to reduce the information to:
+Create an endpoint called `items`. This endpoint shall group all the information 
+previously mentioned. The goal is normalize the output of those APIs. In order 
+to do that, we are going to reduce the information provided to:
 
 - `id` unique id which is going to be used for more information
 - `name` display name
@@ -39,19 +39,18 @@ purpose.
 
 `/items/:id`
 
-In this case, we want to response with the next structure:
+In this case, we want to reply with the following structure:
 ```
 {
     "id": "some-id",
     "image": "://url/to/image",
     "name": "whatever",
-    "url": "://url/to/more/information"
 }
 
 ```
 
-As our `drivers` API doesn't have any images we can return, we are going to 
-display an `url` for their wikipedia site.
+As our `drivers` API doesn't have any images, we are going to display the `url` 
+for their wikipedia sites.
 
 ## Tips
 - You can check API response structure in the root url provided or:
