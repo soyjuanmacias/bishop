@@ -49,8 +49,8 @@ In this case, we want to reply with the following structure:
 
 ```
 
-As our `drivers` API doesn't have any images, we are going to display the `url` 
-for their wikipedia sites.
+As our `drivers` API doesn't have any images, we are going to display in 
+`image` field the url for their wikipedia sites.
 
 ## Tips
 - You can check API response structure in the root url provided or:
