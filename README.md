@@ -12,7 +12,7 @@ Our objetive is create an api that join different sources of data.
 
 ## Exercise
 
-Create an endpoint called `items`. This endpoint group all the information from
+Create an endpoint called `items`. This endpoint group all the information 
 previously mentioned. We want to flatten the information displayed and to 
 complete that we are going to reduce the information to:
 
