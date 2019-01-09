@@ -1,4 +1,4 @@
-# Test Code
+# Bishop (code challenge)
 
 Our objetive is create an api that joins different sources of data.
 
@@ -9,6 +9,19 @@ Our objetive is create an api that joins different sources of data.
 
 `Drivers`: http://ergast.com/api/f1/drivers/{id} // xml
 - url: Driver:url
+
+## Prologue
+
+In this exercise, app is based on: Express. If you are not familiar with it you 
+can check the documentation in the following link:
+
+- Express https://expressjs.com/en/4x/api.html
+
+Around these libraries, we've created a few components and basic structure for
+the project. Here we have some highlights of the structure of the project.
+
+- `/controllers` As any other express application you can find under this folder
+  basic routers for different entities.
 
 ## Exercise
 
