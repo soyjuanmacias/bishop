@@ -1,0 +1,32 @@
+const BaseResolver = require('./base.resolver');
+
+/**
+ * @class PokeapiResolver
+ * Define specific resolver for Poke API Provider.
+ */
+
+module.exports = class PokeapiResolver extends BaseResolver {
+
+  /**
+  * @method getRoute
+  * Recive an url and build the specific url with queries or wathever it need.
+  * 
+  * @param {string} url Specific url for this provider.
+  */
+
+  static getRoute(url) {
+    return `${url}?&limit=999999`;
+  }
+
+  /**
+   * @method getRouteById
+   * Return builded url with base url, id and quereis or wathever it need.
+   * 
+   * @param {string} url Base url from provider.
+   * @param {*} id Specific id from provider.
+   */
+
+  static getRouteById(url, id) {
+    return `${url}/${id}`;
+  }
+}
