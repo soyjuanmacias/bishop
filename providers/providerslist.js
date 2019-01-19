@@ -1,7 +1,5 @@
 let request = require('../services/request.service');
-const PokeapiResolver = require('./resolvers/pokeapi.resolver');
-const ClashapiResolver = require('./resolvers/clahsapi.resolver');
-const DriversResolver = require('./resolvers/drivers.resolver');
+const { PokeapiResolver, ClashapiResolver, DriversResolver } = require('./resolvers');
 const ProvidersFactory = require('./providers.factory');
 
 module.exports = {
