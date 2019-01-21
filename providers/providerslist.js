@@ -1,6 +1,6 @@
 let request = require('../services/request.service');
-const { PokeapiResolver, ClashapiResolver, DriversResolver } = require('./resolvers');
 const ProvidersFactory = require('./providers.factory');
+const { PokeapiResolver, ClashapiResolver, DriversResolver } = require('./resolvers');
 
 module.exports = {
   "pokeapi": ProvidersFactory.create('https://pokeapi.co/api/v2/pokemon', PokeapiResolver, request),
