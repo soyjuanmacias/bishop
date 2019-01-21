@@ -18,7 +18,8 @@
   "main": "index.js",
   "name": "bishop",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "debug": "node --inspect index.js"
   },
   "version": "1.0.0"
 }
