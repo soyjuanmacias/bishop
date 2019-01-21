@@ -15,7 +15,7 @@ module.exports = class DriversResolver extends BaseResolver {
   */
 
   static getRoute(url) {
-    return `${url}.json`;
+    return `${url}.json?limit=999999`;
   }
 
   /**
